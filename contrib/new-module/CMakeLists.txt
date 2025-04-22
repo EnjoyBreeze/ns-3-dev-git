@@ -12,10 +12,12 @@ endif()
 
 build_lib(
     LIBNAME new-module
-    SOURCE_FILES model/new-module.cc
-                 helper/new-module-helper.cc
-    HEADER_FILES model/new-module.h
-                 helper/new-module-helper.h
+    SOURCE_FILES model/tdma-mac.cc
+                 model/tdma-net-device.cc
+                 helper/tdma-helper.cc
+    HEADER_FILES model/tdma-mac.h
+                 model/tdma-net-device.h
+                 helper/tdma-helper.h
     LIBRARIES_TO_LINK ${libcore}
     TEST_SOURCES test/new-module-test-suite.cc
                  ${examples_as_tests_sources}
